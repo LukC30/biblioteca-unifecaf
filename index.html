@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biblioteca Digital UniFECAF: livros, materiais acadêmicos e conteúdos de apoio à aprendizagem.">
+    <title>Biblioteca Digital UniFECAF</title>
+
+    <!-- Fontes do Google: Poppins (títulos) e Inter (textos) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Link para pular direto ao conteúdo (acessibilidade para teclado) -->
+    <a href="#conteudo" class="pular-conteudo">Pular para o conteúdo</a>
+
+    <!-- ========== CABEÇALHO / MENU ========== -->
+    <header class="cabecalho">
+        <div class="container cabecalho__conteudo">
+            <a href="#inicio" class="cabecalho__logo">
+                <img src="assets/imagens/logo-unifecaf.png" alt="UniFECAF - página inicial">
+            </a>
+
+            <!-- Menu mobile feito só com CSS (checkbox + label) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-botao" aria-label="Abrir menu">
+                <span></span>
+            </label>
+
+            <nav class="menu" aria-label="Menu principal">
+                <ul>
+                    <li><a href="#inicio" class="ativo">Biblioteca</a></li>
+                    <li><a href="#livros">Livros</a></li>
+                    <li><a href="#unidades">Unidades</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+
+        <!-- ========== BANNER PRINCIPAL ========== -->
+        <section class="banner" id="inicio">
+            <img src="assets/imagens/banner-biblioteca.jpg" alt="Interior amplo de uma biblioteca com estudantes estudando em mesas" class="banner__imagem">
+            <div class="banner__texto">
+                <h1>Biblioteca Digital <span>UniFECAF</span></h1>
+                <p>Conhecimento ao alcance de um clique, onde e quando você precisar.</p>
+                <a href="#livros" class="botao">Explorar livros</a>
+            </div>
+        </section>
+
+        <!-- ========== SOBRE A NOSSA BIBLIOTECA ========== -->
+        <section class="sobre secao-escura" id="sobre">
+            <div class="container">
+                <h2 class="titulo-secao">Sobre a nossa biblioteca</h2>
+
+                <div class="sobre__grid">
+                    <p>
+                        A Biblioteca Digital UniFECAF reúne livros, artigos e materiais de apoio
+                        selecionados para acompanhar cada etapa da sua formação. Tudo organizado
+                        por categorias para você encontrar o que precisa com rapidez.
+                    </p>
+
+                    <img src="assets/imagens/sobre-estudante.jpg" alt="Estudante lendo um livro digital em um tablet" class="sobre__imagem">
+
+                    <p>
+                        Além do acervo online, oferecemos espaços de estudo, empréstimo de
+                        livros físicos e orientação para pesquisas acadêmicas. Acesse pelo
+                        computador ou pelo celular, a qualquer hora do dia.
+                    </p>
+                </div>
+
+                <ul class="sobre__servicos">
+                    <li>
+                        <img src="assets/imagens/banner-digital.jpg" alt="">
+                        <span>Acervo digital</span>
+                    </li>
+                    <li>
+                        <img src="assets/imagens/unidade-estudo.jpg" alt="">
+                        <span>Salas de estudo</span>
+                    </li>
+                    <li>
+                        <img src="assets/imagens/unidade-colaborativa.jpg" alt="">
+                        <span>Estudo em grupo</span>
+                    </li>
+                    <li>
+                        <img src="assets/imagens/banner-biblioteca.jpg" alt="">
+                        <span>Empréstimos</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ========== SEGUNDO BANNER ========== -->
+        <section class="banner banner--secundario" aria-label="Destaque">
+            <img src="assets/imagens/banner-digital.jpg" alt="Notebook exibindo uma biblioteca online ao lado de uma pilha de livros" class="banner__imagem">
+            <div class="banner__texto">
+                <h2>Mais de 10 mil títulos disponíveis</h2>
+                <p>Leia online, salve seus favoritos e estude no seu ritmo.</p>
+            </div>
+        </section>
+
+        <!-- ========== NOSSOS LIVROS ========== -->
+        <section class="livros secao-escura" id="livros">
+            <div class="container">
+                <h2 class="titulo-secao">Nossos livros</h2>
+
+                <div class="livros__grid">
+                    <article class="card">
+                        <h3>Design Web</h3>
+                        <div class="card__capa capa--azul" aria-hidden="true">HTML<br>&amp; CSS</div>
+                        <p>Fundamentos de HTML e CSS para criar páginas modernas e responsivas.</p>
+                        <a href="#" class="botao botao--card">Saiba mais</a>
+                    </article>
+
+                    <article class="card">
+                        <h3>Lógica de Programação</h3>
+                        <div class="card__capa capa--verde" aria-hidden="true">{ }</div>
+                        <p>Aprenda a pensar como programador com exemplos práticos e exercícios.</p>
+                        <a href="#" class="botao botao--card">Saiba mais</a>
+                    </article>
+
+                    <article class="card">
+                        <h3>Gestão de Projetos</h3>
+                        <div class="card__capa capa--escuro" aria-hidden="true">PM</div>
+                        <p>Planejamento, metodologias ágeis e liderança de equipes.</p>
+                        <a href="#" class="botao botao--card">Saiba mais</a>
+                    </article>
+
+                    <article class="card">
+                        <h3>Banco de Dados</h3>
+                        <div class="card__capa capa--verde" aria-hidden="true">SQL</div>
+                        <p>Modelagem de dados e consultas SQL do básico ao avançado.</p>
+                        <a href="#" class="botao botao--card">Saiba mais</a>
+                    </article>
+
+                    <article class="card">
+                        <h3>Experiência do Usuário</h3>
+                        <div class="card__capa capa--escuro" aria-hidden="true">UX</div>
+                        <p>Como criar produtos digitais simples, úteis e agradáveis de usar.</p>
+                        <a href="#" class="botao botao--card">Saiba mais</a>
+                    </article>
+
+                    <article class="card">
+                        <h3>Metodologia Científica</h3>
+                        <div class="card__capa capa--azul" aria-hidden="true">TCC</div>
+                        <p>Guia para pesquisas acadêmicas, normas ABNT e escrita do TCC.</p>
+                        <a href="#" class="botao botao--card">Saiba mais</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== AS UNIDADES ========== -->
+        <section class="unidades" id="unidades">
+            <div class="container">
+                <h2 class="titulo-secao">As unidades</h2>
+
+                <article class="unidade">
+                    <img src="assets/imagens/unidade-campus.jpg" alt="Prédio moderno do campus com estudantes caminhando">
+                    <div>
+                        <h3>Unidade 1 · Campus Central</h3>
+                        <p>
+                            Nossa maior unidade, com acervo físico completo, atendimento
+                            presencial e computadores para consulta. Aberta de segunda a
+                            sábado, das 7h às 22h.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="unidade">
+                    <img src="assets/imagens/unidade-estudo.jpg" alt="Sala de estudos silenciosa com mesas individuais e luminárias">
+                    <div>
+                        <h3>Unidade 2 · Espaço de Estudos</h3>
+                        <p>
+                            Ambiente silencioso com cabines individuais, tomadas e Wi-Fi.
+                            Ideal para leitura, revisão para provas e produção de trabalhos.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="unidade">
+                    <img src="assets/imagens/unidade-colaborativa.jpg" alt="Estudantes estudando juntos em uma mesa com livros e notebooks">
+                    <div>
+                        <h3>Unidade 3 · Espaço Colaborativo</h3>
+                        <p>
+                            Mesas compartilhadas para trabalhos em grupo, debates e projetos
+                            integradores. Reserve seu horário direto com a equipe da biblioteca.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ========== CONTATOS ========== -->
+        <section class="contatos" id="contatos">
+            <div class="container contatos__grid">
+                <div>
+                    <h2 class="titulo-secao">Contatos</h2>
+                    <p>
+                        Ficou com alguma dúvida sobre o acervo, empréstimos ou acesso à
+                        plataforma? Fale com a nossa equipe, será um prazer ajudar.
+                    </p>
+                    <ul class="contatos__lista">
+                        <li><strong>E-mail:</strong> <a href="mailto:biblioteca@unifecaf.edu.br">biblioteca@unifecaf.edu.br</a></li>
+                        <li><strong>Telefone:</strong> <a href="tel:+551100000000">(11) 0000-0000</a></li>
+                        <li><strong>Horário:</strong> segunda a sábado, das 7h às 22h</li>
+                    </ul>
+                </div>
+                <img src="assets/imagens/logo-unifecaf.png" alt="Logo da UniFECAF" class="contatos__logo">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== RODAPÉ ========== -->
+    <footer class="rodape">
+        <p>&copy; 2026 Biblioteca Digital UniFECAF. Projeto acadêmico da disciplina Design Web.</p>
+    </footer>
+
+</body>
+</html>
